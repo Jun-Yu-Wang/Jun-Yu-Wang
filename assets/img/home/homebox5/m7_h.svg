@@ -4,8 +4,8 @@
 		fill="white" stroke="#381805" stroke-width="2.11" stroke-linecap="round" stroke-linejoin="round" />
 	<path
 		d="M26.0022 14.4198C26.0022 19.5698 21.5222 27.6398 18.1222 27.6398C15.0522 27.6398 10.2422 19.1798 10.2422 14.4198C10.2422 10.4898 12.3122 5.75977 18.1222 5.75977C23.5822 5.75977 26.0022 10.4898 26.0022 14.4198Z"
-		fill="white" stroke="#F8D208" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		fill="#F8D208" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 	<path
 		d="M18.1181 16.9394C19.9351 16.9394 21.4081 15.4664 21.4081 13.6494C21.4081 11.8324 19.9351 10.3594 18.1181 10.3594C16.3011 10.3594 14.8281 11.8324 14.8281 13.6494C14.8281 15.4664 16.3011 16.9394 18.1181 16.9394Z"
-		fill="white" stroke="#F8D208" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+		fill="#F8D208" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
