@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>內政部數據中心網站案</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -71,7 +70,7 @@
                 <label for="menu_list1">精彩案例</label>
                 <ul>
                   <li>
-                    <a href=""><span>銀髮安居</span></a>
+                    <a href="./project-1.html"><span>銀髮安居</span></a>
                   </li>
                   <li>
                     <a href=""><span>電信信令</span></a>
@@ -113,8 +112,41 @@
         </div>
       </nav>
     </header>
-
     <article class="home_box1">
+      <div class="video_ribbon">
+        <div id="playPauseButton">
+          <div id="pause" class="show"></div>
+          <div id="play" class="playing"></div>
+        </div>
+        <div class="sound">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1280">
+            <path
+              fill="currentColor"
+              d="M768 96v1088q0 26-19 45t-45 19t-45-19L326 896H64q-26 0-45-19T0 832V448q0-26 19-45t45-19h262L659 51q19-19 45-19t45 19t19 45z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1664 1472">
+            <path
+              fill="currentColor"
+              d="M768 192v1088q0 26-19 45t-45 19t-45-19L326 992H64q-26 0-45-19T0 928V544q0-26 19-45t45-19h262l333-333q19-19 45-19t45 19t19 45zm384 544q0 76-42.5 141.5T997 971q-10 5-25 5q-26 0-45-18.5T908 912q0-21 12-35.5t29-25t34-23t29-36t12-56.5t-12-56.5t-29-36t-34-23t-29-25t-12-35.5q0-27 19-45.5t45-18.5q15 0 25 5q70 27 112.5 93t42.5 142zm256 0q0 153-85 282.5T1098 1207q-13 5-25 5q-27 0-46-19t-19-45q0-39 39-59q56-29 76-44q74-54 115.5-135.5T1280 736t-41.5-173.5T1123 427q-20-15-76-44q-39-20-39-59q0-26 19-45t45-19q13 0 26 5q140 59 225 188.5t85 282.5zm256 0q0 230-127 422.5T1199 1442q-13 5-26 5q-26 0-45-19t-19-45q0-36 39-59q7-4 22.5-10.5t22.5-10.5q46-25 82-51q123-91 192-227t69-289t-69-289t-192-227q-36-26-82-51q-7-4-22.5-10.5T1148 148q-39-23-39-59q0-26 19-45t45-19q13 0 26 5q211 91 338 283.5T1664 736z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="video_box">
+        <!-- loop="loop" -->
+        <video
+          id="videoMo"
+          preload=""
+          autoplay="autoplay"
+          muted="muted"
+          playsinline=""
+        >
+          <source src="./assets/video/kvTest.mp4" type="video/mp4" />
+        </video>
+        <canvas id="videoCanvas"></canvas>
+      </div>
+      <canvas id="codeDown"></canvas>
       <div class="box">
         <div class="msg_box" data-aos="fade-up">
           <svg class="title" viewBox="0 0 783 130">
@@ -232,30 +264,28 @@
             <div></div>
           </div>
         </div>
-        <div class="circular_box">
+        <div class="circular a1">
           <div>
-            <div>
-              <span>整合</span>
-              <img src="./assets/img/home/homebox4/integrate.svg" />
-            </div>
+            <span>整合</span>
+            <img src="./assets/img/home/homebox4/integrate.svg" />
           </div>
+        </div>
+        <div class="circular a2">
           <div>
-            <div>
-              <span>重組</span>
-              <img src="./assets/img/home/homebox4/recombine.svg" />
-            </div>
+            <span>重組</span>
+            <img src="./assets/img/home/homebox4/recombine.svg" />
           </div>
+        </div>
+        <div class="circular a3">
           <div>
-            <div>
-              <span>應用</span>
-              <img src="./assets/img/home/homebox4/application.svg" />
-            </div>
+            <span>應用</span>
+            <img src="./assets/img/home/homebox4/application.svg" />
           </div>
+        </div>
+        <div class="circular a4">
           <div>
-            <div>
-              <span>挖掘</span>
-              <img src="./assets/img/home/homebox4/excavation.svg" />
-            </div>
+            <span>挖掘</span>
+            <img src="./assets/img/home/homebox4/excavation.svg" />
           </div>
         </div>
       </div>
@@ -488,7 +518,6 @@
         </div>
       </div>
     </article>
-
     <footer>
       <div>
         <img src="./assets/img/layout/footerLogo.svg" alt="" />
@@ -527,6 +556,8 @@
     <script>
       AOS.init();
     </script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/codeDown.js"></script>
     <script src="./assets/js/test.js"></script>
     <script src="./assets/js/particle.js"></script>
     <!-- <script src="./assets/js/ttt.js"></script> -->
